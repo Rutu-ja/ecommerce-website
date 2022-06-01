@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABOUTUS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+    <body>
+        <nav class="nav nav_top">
+            <div class="logo">
+               <a href="Project2.html"> <img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" width="150"></a>
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login/Register</a>
+            </div>
+        </nav>
+        <div class="about_us">
+            <h2>About_us</h2>
+            <div class="about_content">
+                <p>
+                    Creative education is when students are able to use imagination and critical thinking to create new and meaningful forms of ideas where they can take risks, be independent and flexible.Instead of being taught to reiterate what was learned, students learn to develop their ability to find various solutions to a problem. 
+                        Coming up with various out-of-the box solutions is known as divergent thinking and there is no one way of cultivating this skill - largely due to the newness of the concept and the limited scientific information on creativity.
+                        A growing number of colleges and universities are realizing the needs for more creative students in every field of education. 
+                        Therefore, they are opening centers, such as Stanford University’s d.school, Harvard University's i-lab, Oklahoma State University’s Institute for Creativity and Innovation and Ball State University's Center for Creative Inquiry, to increase divergent thinking. 
+                        Those centers are teaching students creative problem solving and design thinking. Creativity is a set of teachable skills and many universities are requiring students to take creativity classes as part of their undergraduate study
+                    </p>
+            </div>
+            <hr>
+            <h2>Our mission</h2>
+            <p>Creative education is when students are able to use imagination and critical thinking to create new and meaningful forms of ideas where they can take risks, be independent and flexible.Instead of being taught to reiterate what was learned, students learn to develop their ability to find various solutions to a problem. 
+                Coming up with various out-of-the box solutions is known as divergent thinking and there is no one way of cultivating this skill - largely due to the newness of the concept and the limited scientific information on creativity.
+                A growing number of colleges and universities are realizing the needs for more creative students in every field of education. 
+                Therefore, they are opening centers, such as Stanford University’s d.school, Harvard University's i-lab, Oklahoma State University’s Institute for Creativity and Innovation and Ball State University's Center for Creative Inquiry, to increase divergent thinking. 
+                Those centers are teaching students creative problem solving and design thinking. Creativity is a set of teachable skills and many universities are requiring students to take creativity classes as part of their undergraduate study
+            </p>
+        </div>
+        <hr>
+           <div class="feed">
+                <h2>write a review</h2>
+                <div class="feed_form">
+                    <form name="submit-googlesheet" method="post">
+                        <input type="text" name="Name" placeholder="Name"><br>
+                        <input type="email" name="Email" placeholder="EmailId"><br>
+                        <input type="number" name="Contact" placeholder="Contact Number"><br>
+                        <textarea rows="5" cols="7" name="Review" placeholder=" Your Review"></textarea><br>
+                        <button type="submit">Submit</button>
+                   </form>
+                </div>
+           </div>
+           <footer>
+               <div class="footer_logo">
+                <a href="Project2.html"> <img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" width="150"></a>
+               </div>
+               <div class="pages">
+                   <h3>Pages</h3>
+                   <a href="about.html">About us</a>|
+                   <a href="services.html">Services</a>|
+                   <a href="blogs.html">Blogs</a>|
+                   <a href="#">Login</a>|
+                   <a href="#">Sign up</a>|
+               </div>
+               <div class="doc">
+                   <h3>Documents</h3>
+                <a href="">Privacy Pollicy</a>|
+                <a href="">Terms and Condition</a>|
+                <a href="">Refund policy</a>|
+               </div>
+               <div class="social">
+                   <h3>Follow us</h3>
+                <a href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>|
+                <a href="https://www.linkedin.com/company/1stop-ai/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>|
+                <a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>|
+                <a href="https://twitter.com/onestopai?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>|
+               </div>
+               <div class="contact">
+                   <h3>Contact us</h3>
+                <a href="https://api.WhatsApp.com/send?phone=919876543210" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="tel: +919876543210"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="mailto: support@1stop.ai" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+               </div>
+               <hr>
+               <p>Copyright &copy; 2021 1stop. All Right Reserved</p>
+           </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript"> 
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbzgtH3fB_9wdreLqaqsSMEHBYTNhQTEuf8OfZSOulHS_jTpHguMsnKmiVL1mwyNIqHA/exec'
+			const form = document.forms['submit-googlesheet']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert('Success!', response))
+				.catch(error => console.error('Error!', error.message))
+			})
+		  </script>
+</script>    
+</body>
+</html>
